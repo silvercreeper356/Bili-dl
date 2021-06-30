@@ -2,25 +2,25 @@
 
 A downloader for Bilibili
 
-**[Download 下载](https://github.com/xuan525/Bili-dl/releases)**
+**[Download](https://github.com/silvercreeper356/Bili-dl/releases)**
 
-#### 声明
+#### Statement
 
-本软件为第三方开源软件。
+This software is a third-party open source software.
 
-本软件及使用本软件下载的资源仅供合法非商业用途使用。
+This software and the resources downloaded using this software are for legal non-commercial use only.
 
-在未取得著作权所有者许可的情况下，您在使用对应资源时需遵循【合理使用】的判断原则，包括但不限于使用的目的及原则、版权作品的性质、版权作品使用量、使用对作品的价值或潜在市场的影响等。
+Without the permission of the copyright owner, you need to follow the principle of [fair use] when using the corresponding resources, including but not limited to the purpose and principles of use, the nature of the copyrighted work, the amount of use of the copyrighted work, and the use of the corresponding work. Value or potential market impact, etc.
 
-软件开发者对任何原因在使用本软件时可能会对用户自己或是他人造成的任何形式的损失和伤害不承担任何责任。
+The software developer does not assume any responsibility for any loss or damage that may be caused to the user or others when using the software for any reason.
 
-#### 命令行功能
+#### Command line functions
 
-帮助：Bili-dl -?
+Help: Bili-dl -?
 
-完全卸载: Bili-dl -uninstall
+Complete uninstall: Bili-dl -uninstall
 
-#### 预览
+#### Preview
 
 ![screenshot](screenshots/0.jpg)
 
