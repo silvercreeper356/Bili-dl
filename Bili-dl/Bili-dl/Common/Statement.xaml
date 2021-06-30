@@ -40,20 +40,20 @@
             </Border>
             <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                 <TextBlock Margin="10" Padding="10" FontSize="16" TextAlignment="Left" LineHeight="25" TextWrapping="Wrap">
-                    <Run Text="1. 本声明适用于在Bili-dl项目主页发布的Bili-dl软件（以下简称 本软件）及本软件源代码。其余第三方编译版本或发布版本均与Bili-dl开发者无关。"/>
+                    <Run Text="1. This statement applies to the Bili-dl software (hereinafter referred to as the software) and the source code of the software published on the Bili-dl project homepage. The other third-party compiled versions or released versions have nothing to do with the Bili-dl developers."/>
                     <LineBreak/>
-                    <Run Text="2. 本软件为第三方开源软件，对本软件源代码的使用请遵循GPLv3开源协议。"/>
+                    <Run Text="2. This software is a third-party open source software. Please follow the GPLv3 open source agreement to use the source code of this software."/>
                     <LineBreak/>
-                    <Run Text="3. 本软件的编写仅为学习目的，使用本软件及软件源代码请依照相关法律法规使用，否则造成的相关后果由用户自行承担。"/>
+                    <Run Text="3. This software is written for learning purposes only. Please use this software and its source code in accordance with relevant laws and regulations, otherwise the relevant consequences will be borne by the user."/>
                     <LineBreak/>
-                    <Run Text="4. 对于使用本软件获取的一切数字资源，请依照相关法律法规合理使用，否则造成的相关后果由用户自行承担。"/>
+                    <Run Text="4. For all digital resources obtained by using this software, please use them reasonably in accordance with relevant laws and regulations, otherwise the relevant consequences will be borne by the user."/>
                     <LineBreak/>
-                    <Run Text="5. 任何单位或个人认为通过本软件获取的资源可能涉嫌侵犯其合法权益，应及时向Bili-dl开发者提供书面反馈，以便维护平台或内容创作者的合法权益。"/>
+                    <Run Text="5. Any unit or individual who believes that the resources obtained through this software may be suspected of infringing on their legal rights, should provide written feedback to the Bili-dl developer in a timely manner in order to protect the legal rights of the platform or content creator."/>
                 </TextBlock>
             </ScrollViewer>
             <Grid Grid.Row="2" Background="#e5e9ef">
-                <CheckBox x:Name="StatementConfirmChk" Margin="10" Content="我已认真阅读并同意以上声明" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" Checked="StatementConfirmChk_Checked"/>
-                <Button x:Name="PrintBtn" Margin="25,0" HorizontalAlignment="Left" Content="打印" FontSize="14" FlowDirection="LeftToRight" Click="PrintBtn_Click">
+                <CheckBox x:Name="StatementConfirmChk" Margin="10" Content="I have carefully read and agree to the above statement" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" Checked="StatementConfirmChk_Checked"/>
+                <Button x:Name="PrintBtn" Margin="25,0" HorizontalAlignment="Left" Content="Print" FontSize="14" FlowDirection="LeftToRight" Click="PrintBtn_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#FF00a1d6"/>

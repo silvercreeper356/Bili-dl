@@ -80,16 +80,16 @@
                 <RowDefinition Height="70"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border Height="41" Width="84" BorderThickness="0,0,0,5" BorderBrush="#FF00a1d6" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="45,0,0,4">
-                <TextBlock Text="下载管理" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Border Height="41" Width="150" BorderThickness="0,0,0,5" BorderBrush="#FF00a1d6" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="45,0,0,4">
+                <TextBlock Text="Download Queue" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
-            <Button x:Name="OpenDownloadDirectoryBtn" Grid.Column="1" Margin="24,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="打开下载目录" FontSize="14" Click="OpenDownloadDirectoryBtn_Click">
+            <Button x:Name="OpenDownloadDirectoryBtn" Grid.Column="1" Margin="24,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Open the download directory" FontSize="14" Click="OpenDownloadDirectoryBtn_Click">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#e5e9ef"/>
                         <Setter Property="Foreground" Value="#FF000000"/>
                         <Setter Property="Height" Value="26"/>
-                        <Setter Property="Width" Value="100"/>
+                        <Setter Property="Width" Value="200"/>
                         <Setter Property="Cursor" Value="Hand"/>
                         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
                         <Setter Property="OpacityMask">

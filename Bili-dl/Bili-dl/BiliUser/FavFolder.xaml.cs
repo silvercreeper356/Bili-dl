@@ -37,7 +37,7 @@ namespace BiliUser
             {
                 case SpecialFolder.ToView:
                     Mid = (int)SpecialFolder.ToView;
-                    TitleBox.Text = "稍后再看";
+                    TitleBox.Text = "See Later";
                     TitleDefaultBrush = new SolidColorBrush(Color.FromRgb(153, 162, 170));
                     TitleBox.Foreground = TitleDefaultBrush;
                     break;

@@ -49,7 +49,42 @@
             <Setter Property="Background" Value="#00000000"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Height" Value="26"/>
-            <Setter Property="Width" Value="60"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="OpacityMask">
+                <Setter.Value>
+                    <DrawingBrush>
+                        <DrawingBrush.Drawing>
+                            <GeometryDrawing Brush="#FF000000">
+                                <GeometryDrawing.Geometry>
+                                    <RectangleGeometry Rect="0,0,60,26" RadiusX="13" RadiusY="13"/>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#88792E47"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="WiderButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#00000000"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Width" Value="120"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="OpacityMask">
@@ -84,7 +119,7 @@
             <Setter Property="Background" Value="#00000000"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Height" Value="26"/>
-            <Setter Property="Width" Value="80"/>
+            <Setter Property="Width" Value="90"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="OpacityMask">
@@ -162,7 +197,7 @@
         </Grid.RowDefinitions>
         <Grid x:Name="Header" Grid.Row="0" Background="#f25d8e" MouseLeftButtonDown="Header_MouseLeftButtonDown" ClipToBounds="False">
             <Image Grid.Column="0" Height="16" Width="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Source="icon.ico" RenderOptions.BitmapScalingMode="Fant"/>
-            <TextBlock x:Name="TitleBox" Grid.Column="0" Foreground="#FFFFFFFF" FontSize="16" Margin="40,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Bili-dl"/>
+            <TextBlock x:Name="TitleBox" Grid.Column="0" Foreground="#FFFFFFFF" FontSize="16" Margin="40,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Bili-dl (ENG)"/>
             <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" Margin="0,0,10,0">
                 <Button x:Name="CloseBtn" Margin="5,0" Style="{StaticResource NarrowButtonStyle}" FlowDirection="LeftToRight" Click="CloseBtn_Click">
                     <Button.Content>
@@ -207,10 +242,10 @@
                         </Path>
                     </Button.Content>
                 </Button>
-                <Button x:Name="ShowSettingsBtn" Margin="5,0" Content="设置" FontSize="14" Style="{StaticResource NormalButtonStyle}" FlowDirection="LeftToRight" Click="ShowSettingsBtn_Click"/>
-                <Button x:Name="ShowQueueBtn" Margin="5,0" Content="下载管理" FontSize="14" Style="{StaticResource WideButtonStyle}" FlowDirection="LeftToRight" Click="ShowQueueBtn_Click"/>
-                <Button x:Name="ShowFavoritesBtn" Margin="5,0" Content="收藏夹" FontSize="14" Style="{StaticResource WideButtonStyle}" FlowDirection="LeftToRight" Visibility="Collapsed" Click="ShowFavoritesBtn_Click"/>
-                <Button x:Name="LoginBtn" Margin="5,0" Content="登录" FontSize="14" Style="{StaticResource NormalButtonStyle}" FlowDirection="LeftToRight" Click="LoginBtn_Click"/>
+                <Button x:Name="ShowSettingsBtn" Margin="5,0" Content="Set up" FontSize="14" Style="{StaticResource NormalButtonStyle}" FlowDirection="LeftToRight" Click="ShowSettingsBtn_Click"/>
+                <Button x:Name="ShowQueueBtn" Margin="5,0" Content="Download Queue" FontSize="14" Style="{StaticResource WiderButtonStyle}" FlowDirection="LeftToRight" Click="ShowQueueBtn_Click"/>
+                <Button x:Name="ShowFavoritesBtn" Margin="5,0" Content="Favorites" FontSize="14" Style="{StaticResource WideButtonStyle}" FlowDirection="LeftToRight" Visibility="Collapsed" Click="ShowFavoritesBtn_Click"/>
+                <Button x:Name="LoginBtn" Margin="5,0" Content="Log In" FontSize="14" Style="{StaticResource NormalButtonStyle}" FlowDirection="LeftToRight" Click="LoginBtn_Click"/>
                 <Image x:Name="UserFaceImage" Grid.Column="1" Margin="5,0" HorizontalAlignment="Center" Height="32" VerticalAlignment="Center" Width="32" Stretch="Fill" RenderOptions.BitmapScalingMode="Fant" FlowDirection="LeftToRight">
                     <Image.OpacityMask>
                         <DrawingBrush>

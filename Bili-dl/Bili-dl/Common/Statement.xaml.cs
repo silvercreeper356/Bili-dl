@@ -39,7 +39,7 @@ namespace Bili_dl
             previewWindow.Owner = Application.Current.MainWindow;
             previewWindow.ShowInTaskbar = false;
             previewWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            previewWindow.Title = "打印协议";
+            previewWindow.Title = "Printing agreement";
             previewWindow.ShowDialog();
         }
     }

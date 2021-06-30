@@ -107,7 +107,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Border BorderThickness="0,0,0,5" BorderBrush="#FF00a1d6">
-                <TextBlock Text="登录" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="Log In" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
         </Grid>
         <Grid x:Name="LoginGrid" Margin="0,142,0,40">
@@ -124,11 +124,11 @@
             </Grid.RowDefinitions>
             <Image Grid.Column="1" Grid.Row="0" gif:ImageBehavior.AnimatedSource="img/loadTV.gif" Stretch="None" Width="140" Height="140"/>
             <Image Grid.Column="1" Grid.Row="0" x:Name="QrImageBox" Stretch="Fill" Width="140" Height="140"/>
-            <TextBlock Grid.Column="1" Grid.Row="1" Text="扫 描 二 维 码 登 录" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="Scan QR Code" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock Grid.Column="1" Grid.Row="2" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
-                <Run Text="请使用哔哩哔哩客户端"/>
+                <Run Text="Please use the Bilibili client"/>
                 <LineBreak/>
-                <Run Text="扫码登录"/>
+                <Run Text="Scan code login"/>
             </TextBlock>
             <Image Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="4" Source="img/2233pic.png" Stretch="None" Margin="0,0,0,60" Width="386" Height="155" VerticalAlignment="Bottom"/>
             <Image Grid.Column="1" Grid.Row="0" Grid.RowSpan="4" gif:ImageBehavior.AnimatedSource="img/tv.gif" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,-53,0,0" Width="70" Height="70"/>
@@ -179,8 +179,8 @@
                     </Button.Content>
                 </Button>
             </Grid>
-            <TextBlock Grid.Column="1" Grid.Row="1" Text="二 维 码 登 录 已 失 效" Background="#FFFFFFFF" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="{Binding ElementName=ReloadGrid, Path=Visibility}"/>
-            <Button Grid.Column="1" Grid.Row="3" x:Name="ExitBtn" Content="返回" FontSize="12" Foreground="#FFFFFFFF" Width="330" Height="38" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="0" BorderThickness="0" Cursor="Hand" Click="CloseBtn_Click">
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="QR Code is Invalid" Background="#FFFFFFFF" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="{Binding ElementName=ReloadGrid, Path=Visibility}"/>
+            <Button Grid.Column="1" Grid.Row="3" x:Name="ExitBtn" Content="Return" FontSize="12" Foreground="#FFFFFFFF" Width="330" Height="38" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="0" BorderThickness="0" Cursor="Hand" Click="CloseBtn_Click">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="#FF00a1d6"/>

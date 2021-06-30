@@ -151,7 +151,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Border Height="41" Width="64" BorderThickness="0,0,0,5" BorderBrush="#FF00a1d6" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="45,0,0,4">
-                <TextBlock Text="设置" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="Set Up" FontSize="18" Foreground="#FF00a1d6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
             <ScrollViewer Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <Grid Margin="40">
@@ -167,10 +167,10 @@
                             <ColumnDefinition Width="80"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextWrapping="Wrap" TextTrimming="CharacterEllipsis">
-                        <Run Text="下载目录: "/>
+                        <Run Text="Download catalog: "/>
                         <Run x:Name="DownloadPathBox" Text=""/>
                         </TextBlock>
-                        <Button x:Name="SelectDownloadPathBtn" Grid.Column="1" Margin="5,0" Content="选择" Width="70" FontSize="14" Style="{StaticResource ButtonStyle}" Click="SelectDownloadPathBtn_Click">
+                        <Button x:Name="SelectDownloadPathBtn" Grid.Column="1" Margin="5,0" Content="Select" Width="70" FontSize="14" Style="{StaticResource ButtonStyle}" Click="SelectDownloadPathBtn_Click">
                             <Button.OpacityMask>
                                 <DrawingBrush>
                                     <DrawingBrush.Drawing>
@@ -190,10 +190,10 @@
                             <ColumnDefinition Width="80"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextWrapping="Wrap" TextTrimming="CharacterEllipsis">
-                        <Run Text="临时文件目录 (重启后生效): "/>
+                        <Run Text="Temporary file directory (effective after restart): "/>
                         <Run x:Name="TempPathBox" Text=""/>
                         </TextBlock>
-                        <Button x:Name="SelectTempPathBtn" Grid.Column="1" Margin="5,0" Content="选择" Width="70" FontSize="14" Style="{StaticResource ButtonStyle}" Click="SelectTempPathBtn_Click">
+                        <Button x:Name="SelectTempPathBtn" Grid.Column="1" Margin="5,0" Content="Select" Width="70" FontSize="14" Style="{StaticResource ButtonStyle}" Click="SelectTempPathBtn_Click">
                             <Button.OpacityMask>
                                 <DrawingBrush>
                                     <DrawingBrush.Drawing>
@@ -213,7 +213,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <WrapPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                            <TextBlock Text="重试间隔: " FontSize="14"/>
+                            <TextBlock Text="Retry interval: " FontSize="14"/>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
@@ -224,10 +224,10 @@
                                 <TextBlock x:Name="RetryIntervalBox" Grid.Column="1" Margin="5,0" Text="" FontSize="14"/>
                                 <Button x:Name="IncreaseRetryIntervalBtn" Grid.Column="2" Margin="5,0" Padding="0" Content="+" Style="{StaticResource RoundButtonStyle}" Click="IncreaseRetryIntervalBtn_Click"/>
                             </Grid>
-                            <TextBlock Text=" 秒" FontSize="14"/>
+                            <TextBlock Text=" Second" FontSize="14"/>
                         </WrapPanel>
                         <WrapPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                            <TextBlock Text="下载线程数量: " FontSize="14"/>
+                            <TextBlock Text="Number of download threads: " FontSize="14"/>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
@@ -238,7 +238,6 @@
                                 <TextBlock x:Name="DownloadThreadsBox" Grid.Column="1" Margin="5,0" Text="" FontSize="14"/>
                                 <Button x:Name="IncreaseDownloadThreadsBtn" Grid.Column="2" Margin="5,0" Padding="0" Content="+" Style="{StaticResource RoundButtonStyle}" Click="IncreaseDownloadThreadsBtn_Click"/>
                             </Grid>
-                            <TextBlock Text=" 个" FontSize="14"/>
                         </WrapPanel>
                     </Grid>
                 </Grid>

@@ -63,10 +63,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <WrapPanel x:Name="NavPanel" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
-            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="视频" Tag="video" Checked="RadioButton_Checked" IsChecked="True"/>
-            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="番剧" Tag="media_bangumi" Checked="RadioButton_Checked"/>
-            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="影视" Tag="media_ft" Checked="RadioButton_Checked"/>
-            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="用户" Tag="bili_user" Checked="RadioButton_Checked"/>
+            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="Video" Tag="video" Checked="RadioButton_Checked" IsChecked="True"/>
+            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="Fan drama" Tag="media_bangumi" Checked="RadioButton_Checked"/>
+            <RadioButton Width="140" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="Film and television" Tag="media_ft" Checked="RadioButton_Checked"/>
+            <RadioButton Width="114" Height="54" Style="{StaticResource RadioButtonStyle}" GroupName="Nav" Content="User" Tag="bili_user" Checked="RadioButton_Checked"/>
         </WrapPanel>
         <Grid x:Name="LoadingPrompt" Grid.Row="1" Height="24" Width="86" Visibility="Hidden">
             <Image gif:ImageBehavior.AnimatedSource="img/loading.gif" Width="24" Height="24" Stretch="None" VerticalAlignment="Center" HorizontalAlignment="Left"/>

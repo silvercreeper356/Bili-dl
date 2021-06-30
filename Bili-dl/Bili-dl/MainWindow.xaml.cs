@@ -67,7 +67,7 @@ namespace Bili_dl
                 if (userInfo != null)
                 {
                     ShowUserInfo(userInfo);
-                    LoginBtn.Content = "登出";
+                    LoginBtn.Content = "Log In";
                 }
             }
         }
@@ -118,29 +118,29 @@ namespace Bili_dl
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (LoginBtn.Content.ToString() == "登录")
+            if (LoginBtn.Content.ToString() == "Log In")
             {
                 MoblieLoginWindow moblieLoginWindow = new MoblieLoginWindow(this);
                 moblieLoginWindow.LoggedIn += MoblieLoginWindow_LoggedIn;
                 moblieLoginWindow.Canceled += MoblieLoginWindow_Canceled;
                 moblieLoginWindow.Show();
-                LoginBtn.Content = "登录中...";
+                LoginBtn.Content = "Logging In...";
             }
-            else if (LoginBtn.Content.ToString() == "登出")
+            else if (LoginBtn.Content.ToString() == "Sign Out")
             {
                 BiliApi.Cookies = null;
                 ConfigUtil.ConfigManager.SetCookieCollection(null);
                 UserInfoBox.Text = string.Empty;
                 UserFaceImage.Source = null;
                 ShowFavoritesBtn.Visibility = Visibility.Collapsed;
-                LoginBtn.Content = "登录";
+                LoginBtn.Content = "Log In";
             }
 
         }
 
         private void MoblieLoginWindow_Canceled(MoblieLoginWindow sender)
         {
-            LoginBtn.Content = "登录";
+            LoginBtn.Content = "Log In";
         }
 
         private void MoblieLoginWindow_LoggedIn(MoblieLoginWindow sender, System.Net.CookieCollection cookies, uint uid)
@@ -158,7 +158,7 @@ namespace Bili_dl
                 if (userInfo != null)
                 {
                     ShowUserInfo(userInfo);
-                    LoginBtn.Content = "登出";
+                    LoginBtn.Content = "Sign Out";
                 }
                 sender.Close();
 
@@ -173,7 +173,7 @@ namespace Bili_dl
             stringBuilder.Append(userInfo.Uname);
             stringBuilder.Append(string.Format(" [Lv.{0}]", userInfo.CurrentLevel));
             if (userInfo.VipStatus > 0)
-                stringBuilder.Append(" [大会员]");
+                stringBuilder.Append(" [Big Member]");
             UserInfoBox.Text = stringBuilder.ToString();
 
             UserFaceImage.Source = new BitmapImage(new Uri(userInfo.Face));
@@ -196,12 +196,12 @@ namespace Bili_dl
         {
             if (DownloadManager.Append(downloadTask))
             {
-                Prompt.Text = "已添加到下载队列";
+                Prompt.Text = "Added to download queue";
                 ((System.Windows.Media.Animation.Storyboard)Resources["ShowPrompt"]).Begin();
             }
             else
             {
-                Prompt.Text = "已存在于下载队列";
+                Prompt.Text = "Already in the download queue";
                 ((System.Windows.Media.Animation.Storyboard)Resources["ShowPrompt"]).Begin();
             }
         }

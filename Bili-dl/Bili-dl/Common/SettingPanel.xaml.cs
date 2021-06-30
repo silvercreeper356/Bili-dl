@@ -67,7 +67,7 @@ namespace Bili_dl
             System.Windows.Forms.FolderBrowserDialog folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog
             {
                 SelectedPath = settings.DownloadPath,
-                Description = "请选择下载目录"
+                Description = "Please select the download directory"
             };
             if (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -82,7 +82,7 @@ namespace Bili_dl
             System.Windows.Forms.FolderBrowserDialog folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog
             {
                 SelectedPath = settings.TempPath,
-                Description = "请选择一个空白文件夹作为临时文件目录"
+                Description = "Please select a blank folder as the temporary file directory"
             };
             while (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -98,7 +98,7 @@ namespace Bili_dl
                         ConfigUtil.ConfigManager.SetSettings(settings);
                         break;
                     }
-                    MessageBox.Show("请选择一个空目录");
+                    MessageBox.Show("Please select an empty directory");
                 }
                 else
                 {

@@ -19,9 +19,9 @@ namespace BiliSearch
             if (TitleInline.Text != null)
                 TitleInline.Text = userSuggest.Title;
 
-            FansInline.Text = string.Format("{0:0}粉丝", BiliApi.FormatNum(userSuggest.Fans, 1)).PadRight(10, ' ');
+            FansInline.Text = string.Format("{0:0}Fans", BiliApi.FormatNum(userSuggest.Fans, 1)).PadRight(10, ' ');
 
-            ArchivesInline.Text = string.Format("{0:0}个视频", BiliApi.FormatNum(userSuggest.Archives, 1));
+            ArchivesInline.Text = string.Format("{0:0}Videos", BiliApi.FormatNum(userSuggest.Archives, 1));
 
             ImageBox.Source = new BitmapImage(new Uri(userSuggest.Cover));
         }

@@ -32,7 +32,7 @@ namespace BiliSearch
                 Wrapper.Children.Add(new Button
                 {
                     Style = (Style)Resources["TextButtonStyle"],
-                    Content = "上一页",
+                    Content = "Previous",
                     Tag = currentPage - 1
                 });
 
@@ -106,7 +106,7 @@ namespace BiliSearch
                 Wrapper.Children.Add(new Button
                 {
                     Style = (Style)Resources["TextButtonStyle"],
-                    Content = "下一页",
+                    Content = "Next",
                     Tag = currentPage + 1
                 });
         }

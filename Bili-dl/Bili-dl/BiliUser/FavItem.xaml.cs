@@ -18,7 +18,7 @@ namespace BiliUser
             Id = id;
             Title = title;
             TitleBox.Text = title;
-            InfoBox.Text = string.Format("收藏于: {0}", TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1)).AddSeconds(info).ToString("yyyy-MM-dd"));
+            InfoBox.Text = string.Format("Collection in: {0}", TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1)).AddSeconds(info).ToString("yyyy-MM-dd"));
 
             if (cover != null)
                 ImageBox.Source = new BitmapImage(new Uri(cover));

@@ -175,44 +175,44 @@
         
         <ScrollViewer Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Gray" VerticalScrollBarVisibility="Auto">
             <StackPanel ScrollViewer.VerticalScrollBarVisibility="Auto">
-                <Button x:Name="PrintBtn" Content="打印" Margin="10" Width="75" Height="40" Click="PrintBtn_Click"/>
-                <TextBlock Text="打印机: " Margin="10,10,10,0"/>
+                <Button x:Name="PrintBtn" Content="Print" Margin="10" Width="75" Height="40" Click="PrintBtn_Click"/>
+                <TextBlock Text="Printer: " Margin="10,10,10,0"/>
                 <ComboBox x:Name="PrintersCombo" Margin="10" Width="120"/>
-                <TextBlock Text="纸张尺寸: " Margin="10,10,10,0"/>
+                <TextBlock Text="Paper Size: " Margin="10,10,10,0"/>
                 <ComboBox x:Name="PageSizeCombo" Margin="10" Width="120"/>
-                <TextBlock Text="页边距: " Margin="10,10,10,0"/>
+                <TextBlock Text="Margins: " Margin="10,10,10,0"/>
                 <StackPanel x:Name="PaddingSettingBox" Margin="10">
                     <ComboBox x:Name="PaddingModeCombo" Width="120">
-                        <ComboBoxItem Content="统一" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Uniform}"/>
-                        <ComboBoxItem Content="对称" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Symmrtry}"/>
-                        <ComboBoxItem Content="独立" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Independent}"/>
+                        <ComboBoxItem Content="Unite" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Uniform}"/>
+                        <ComboBoxItem Content="Symmetry" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Symmrtry}"/>
+                        <ComboBoxItem Content="Independent" Tag="{x:Static local:PrintingPreviewWindow+PaddingMode.Independent}"/>
                     </ComboBox>
                     <local:NumberBox x:Name="UniformPaddingBox" Height="23" Width="120" Margin="0,5,0,0"/>
                     <StackPanel x:Name="SymmrtryPaddingBox" Margin="0,5,0,0">
                         <Grid Margin="0,5">
-                            <TextBlock Text="上下:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Up and Down:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="VerticalPaddingBox" Height="23" Margin="30,0,0,0"/>
                         </Grid>
                         <Grid Margin="0,5">
-                            <TextBlock Text="左右:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="About:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="HorizontalPaddingBox" Height="23" Margin="30,0,0,0"/>
                         </Grid>
                     </StackPanel>
                     <StackPanel x:Name="IndependentPaddingBox" Margin="0,5,0,0">
                         <Grid Margin="0,5">
-                            <TextBlock Text="上:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="On:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="TopPaddingBox" Height="23" Margin="20,0,0,0"/>
                         </Grid>
                         <Grid Margin="0,5">
-                            <TextBlock Text="下:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Under:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="BottomPaddingBox" Height="23" Margin="20,0,0,0"/>
                         </Grid>
                         <Grid Margin="0,5">
-                            <TextBlock Text="左:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Left:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="LeftPaddingBox" Height="23" Margin="20,0,0,0"/>
                         </Grid>
                         <Grid Margin="0,5">
-                            <TextBlock Text="右:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Right:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                             <local:NumberBox x:Name="RightPaddingBox" Height="23" Margin="20,0,0,0"/>
                         </Grid>
                     </StackPanel>

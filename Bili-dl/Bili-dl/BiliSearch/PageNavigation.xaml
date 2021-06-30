@@ -209,7 +209,7 @@
     </UserControl.Resources>
     <Grid Margin="0,15">
         <WrapPanel x:Name="Wrapper">
-            <Button Content="上一页" Style="{StaticResource TextButtonStyle}"/>
+            <Button Content="Previous" Style="{StaticResource TextButtonStyle}"/>
             <Button Content="1" Style="{StaticResource NumberButtonStyle}"/>
             <Button Style="{StaticResource EllipsisButtonStyle}"/>
             <Button Content="2" Style="{StaticResource NumberButtonStyle}"/>
@@ -222,7 +222,7 @@
             <Button Content="9" Style="{StaticResource NumberButtonStyle}"/>
             <Button Style="{StaticResource EllipsisButtonStyle}"/>
             <Button Content="10" Style="{StaticResource NumberButtonStyle}"/>
-            <Button Content="下一页" Style="{StaticResource TextButtonStyle}"/>
+            <Button Content="Next" Style="{StaticResource TextButtonStyle}"/>
         </WrapPanel>
     </Grid>
 </UserControl>

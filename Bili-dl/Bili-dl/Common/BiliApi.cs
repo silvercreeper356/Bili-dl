@@ -130,7 +130,6 @@ namespace Bili
 
             request.Referer = System.Text.RegularExpressions.Regex.Match(url, "https?://[^/]+").Value;
             request.CookieContainer = new CookieContainer();
-            request.CookieContainer.Add(Cookies);
 
             if (method == "POST")
             {

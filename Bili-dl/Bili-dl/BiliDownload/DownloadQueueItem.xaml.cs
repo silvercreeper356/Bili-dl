@@ -36,7 +36,7 @@ namespace BiliDownload
             Title.Text = downloadTask.Title;
             SubTitle.Text = string.Format("{0}-{1}", downloadTask.Index, downloadTask.Part);
             Quality.Text = downloadTask.Description;
-            InfoBox.Text = "等待中...";
+            InfoBox.Text = "Waiting...";
 
             downloadTask.StatusUpdate += DownloadTask_StatusUpdate;
             downloadTask.Finished += DownloadTask_Finished;
@@ -52,27 +52,27 @@ namespace BiliDownload
                     {
                         case DownloadTask.Status.Downloading:
                             InfoBox.Foreground = new SolidColorBrush(Color.FromRgb(0x00, 0x00, 0x00));
-                            InfoBox.Text = string.Format("{0:0.0}%    {1}    下载中...", progressPercentage, FormatBps(bps));
+                            InfoBox.Text = string.Format("{0:0.0}%    {1}    Downloading...", progressPercentage, FormatBps(bps));
                             PBar.Value = progressPercentage;
                             break;
                         case DownloadTask.Status.Analyzing:
                             InfoBox.Foreground = new SolidColorBrush(Color.FromRgb(0x00, 0x00, 0x00));
-                            InfoBox.Text = "正在获取下载地址...";
+                            InfoBox.Text = "Obtaining download link...";
                             PBar.Value = progressPercentage;
                             break;
                         case DownloadTask.Status.Merging:
                             InfoBox.Foreground = new SolidColorBrush(Color.FromRgb(0x00, 0x00, 0x00));
-                            InfoBox.Text = "正在完成...";
+                            InfoBox.Text = "Finishing...";
                             PBar.Value = progressPercentage;
                             break;
                         case DownloadTask.Status.Finished:
                             InfoBox.Foreground = new SolidColorBrush(Color.FromRgb(0x00, 0x00, 0x00));
-                            InfoBox.Text = "下载完成!!!";
+                            InfoBox.Text = "Download completed!!!";
                             PBar.Value = progressPercentage;
                             break;
                         case DownloadTask.Status.AnalysisFailed:
                             InfoBox.Foreground = new SolidColorBrush(Color.FromRgb(0xf2, 0x5d, 0x8e));
-                            InfoBox.Text = string.Format("获取下载地址失败，将在{0}秒后重试", bps);
+                            InfoBox.Text = string.Format("Failed to obtain download address, will retry in {0} seconds", bps);
                             break;
                     }
                     

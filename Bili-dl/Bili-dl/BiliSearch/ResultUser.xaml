@@ -38,10 +38,10 @@
             <Grid Grid.Column="1" Margin="12,0,0,0">
                 <TextBlock x:Name="UnameBox" Text="" FontSize="16" FontWeight="Bold"/>
                 <TextBlock Margin="0,34,0,0" Foreground="#6d757a" FontSize="12" LineHeight="24" TextTrimming="WordEllipsis">
-                <Run Text="稿件: "/>
+                <Run Text="Manuscript: "/>
                 <Run x:Name="VideosBox" Text=""/>
                 <Run Text="   "/>
-                <Run Text="粉丝: "/>
+                <Run Text="Fans: "/>
                 <Run x:Name="FansBox" Text=""/>
                 <LineBreak/>
                 <Run x:Name="UsignBox" Text=""/>
